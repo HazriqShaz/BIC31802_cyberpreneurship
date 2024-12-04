@@ -7,7 +7,97 @@
 body section {
     /* get rids of scrollbar */
     width: calc(100vw - (100vw - 100%));
-    
+    z-index: 1;
     height: 100vh;
     display: flex;
+    position: relative;
+}
+
+/* FONTS */
+.notable-regular {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.roboto-flex-regular {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+/* END OF Fonts */
+
+/* Video CSS */
+.video-container {
+    position: absolute;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    z-index: -1;
+}
+.video-overlay {
+    position: absolute;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.video-background {
+    height: 100vh;
+    width: calc(100vw - (100vw - 100%));
+    z-index: -1;
+    object-fit: cover;
+}
+/* END OF Video Css */
+
+.main-spacer-1 {
+    flex: 1;
+    /* background-color: blue; */
+}
+
+.main-container-1 {
+    flex: 5;
+    /* background-color: red; */
+    padding-top: 5em;
+    z-index: 1;
+}
+
+.main-container-1 h1, h2, p {
+    color: white;
+}
+
+.main-container-1 h1 {
+    font-size: 3em;
+    font-family: Notable;
+}
+
+.main-container-1 h2 {
+    font-size: 2em;
+    font-family: Poiret One;
+    padding-bottom: 0.2em;
+}
+
+.main-container-1 p {
+    font-size: 1.2em;
+    font-family: Roboto Flex;
 }
