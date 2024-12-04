@@ -103,14 +103,18 @@ body section {
     font-family: Roboto Flex;
 }
 
-.image-container {
+.main-container-1 img {
+    margin-top: 2em;
+    opacity: 0.6;
+}
+
+.backgroundimage-container {
     position: absolute;
     width: calc(100vw - (100vw - 100%));
-    height: 100vh;
     z-index: -1;
 }
 
-.image-container img {
+.backgroundimage-container img {
     height: 100vh;
     width: calc(100vw - (100vw - 100%));
     z-index: -1;
@@ -144,12 +148,63 @@ body section {
 
 .main-container-2 {
     flex: 4;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
 }
 
 .content-container {
     flex: 1;
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container h2{
+    font-family: Roboto Flex;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+
+}
+
+.content-container p{
+    font-family: Roboto Flex;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-bottom: 1em;
+}
+
+.text-container {
+    width: 100%;
+    /* background-color: #000000;
+    border-radius: 5px; */
+}
+
+.main-container-3 {
+    flex: 5;
+    /* background-color: red; */
+    padding-top: 5em;
+    z-index: 1;
+}
+
+.main-container-3 h2 {
+    color: #333333;
+    font-size: 2em;
+    font-family: Poiret One;
+    padding-bottom: 0.2em;
+}
+
+.main-container-3 p {
+    font-size: 1.2em;
+    color: #333333;
+    font-family: Roboto Flex;
+    width: 300px;
 }
